@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<thermo>
+<import>
+<idf_board>C:\Users\Ryan\Documents\medulla\hardware\medulla.2\v2\PCB\medulla.2.four_layer_PCB\medulla.2.four_layer_BoardSim.emn</idf_board>
+<idf_lib>C:\Users\Ryan\Documents\medulla\hardware\medulla.2\v2\PCB\medulla.2.four_layer_PCB\medulla.2.four_layer_BoardSim.emp</idf_lib>
+<hyp>C:\Users\Ryan\Documents\medulla\hardware\medulla.2\v2\PCB\medulla.2.four_layer_PCB\medulla.2.four_layer_BoardSim.hyp</hyp>
+</import>
+</thermo>

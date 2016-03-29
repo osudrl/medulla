@@ -1,0 +1,859 @@
+ --------------------------------------------------------------------
+|   HyperLynx Batch Mode Report, v9.1                        |
+|                                                                    |
+| Note:   Search on '** Warning **'  and  '** Warning(Severe) **'    |
+|         to find signal-integrity and EMC problems.                 |
+|                                                                    |
+| Note:   The signal-integrity information below is a summary of     |
+|         the results from the corner cases selected for this batch  |
+|         run (Fast-Strong, Typical, and Slow-Weak).                 |
+|                                                                    |
+| Note:   Signal-integrity simulation tests for SI compliance        |
+|         against user-set limits, and includes effects of           |
+|         transmission-line discontinuities, IC loading, etc.        |
+|         SI violation flags include:                                |
+|           D = Delay error                                          |
+|               -> min delay to pin < net's min delay threshold  OR  |
+|               -> max delay to pin > net's max delay threshold      |
+|           T = Threshold error                                      |
+|               -> during transition, the pin's signal level did     |
+|                  not reach the switching threshold                 |
+|           R = Rail-overshoot error                                 |
+|               -> pin's signal level exceeded the power-supply rail |
+|                  by more than the net's overshoot threshold        |
+|           O = Signal-integrity-overshoot error                     |
+|               -> pin's signal level exceeded the steady-state      |
+|                  level by more than the net's overshoot threshold  |
+|           M = Multi-threshold-crossing error                       |
+|               -> pin's signal level crossed the threshold more     |
+|                  than once during transition                       |
+|           N = Non-monotonic error                                  |
+|               -> pin's signal level changed direction while within |
+|                  the transition region between Vil and Vih         |
+|           X = Crosstalk error                                      |
+|               -> crosstalk from neighbor nets exceeded the         |
+|                  threshold value for this net                      |
+|           - = No error in this field                               |
+|                                                                    |
+| Note:   Metal delays shown in this report are copper delays only   |
+|         (no effects of reflections, IC loading, etc.) For actual   |
+|         pin-to-pin delays, see detailed SI simulation results.     |
+|                                                                    |
+| Note:   Lossy transmission-line modeling used.                     |
+ --------------------------------------------------------------------
+
+START TIME
+**********************************************************************
+  Date ............................. Wednesday Sep. 02,2015
+  Time ............................. 09:49:36
+
+GENERAL INFORMATION
+**********************************************************************
+  Board ............................ medulla.2.four_layer_BoardSim.hyp
+  Total number of nets ............. 91
+  Total number of components........ 111
+  Board temperature ................ 20.0 degrees C
+  Default IC model (used for quick analysis if IC model is missing)
+    IC driver rise/fall time ..1.000 ns
+    IC driver switching voltage range ..3.30 V
+    IC driver output impedance 1.0 ohms
+    IC input capacitance ..... 7.0 pF
+
+CHANGED PASSIVE-COMPONENT VALUES
+**********************************************************************
+  Reference Designator  User Entered Value
+  --------------------  ------------------
+
+NEW TERMINATING COMPONENTS (Quick Terminators)
+**********************************************************************
+  Terminator Location          Type                Value(s)
+  ---------------------------  ------------------  -------------------
+
+
+NET INFORMATION
+**********************************************************************
+  NET = $$$20926, PHY1_AD0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.299 in
+          max. recommended length . 001.165 in
+
+  NET = $$$24559
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$6369, PHY0_AD0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$6407, PHY0_RX0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.199 in
+          max. recommended length . 001.165 in
+
+  NET = $$$6489, PHY0_RX2
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.360 in
+          max. recommended length . 001.165 in
+
+  NET = $$$6490, PHY0_RX3
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.419 in
+          max. recommended length . 001.165 in
+
+  NET = $$$6446, PHY0_RX1
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.178 in
+          max. recommended length . 001.165 in
+
+  NET = $$$20930, PHY1_RX3
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.812 in
+          max. recommended length . 001.165 in
+
+  NET = $$$20927, PHY1_RX0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.072 in
+          max. recommended length . 001.165 in
+
+  NET = $$$20928, PHY1_RX1
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.935 in
+          max. recommended length . 001.165 in
+
+  NET = $$$20929, PHY1_RX2
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.897 in
+          max. recommended length . 001.165 in
+
+  NET = PHY1_TX0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = CRS1
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY1_TX3
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY1_TX2
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = COL1
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = RX_DV[1]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.628 in
+          max. recommended length . 001.165 in
+
+  NET = RX_ERR[1]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.851 in
+          max. recommended length . 001.165 in
+
+  NET = MI_CLK/LINKPOL
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.810 in
+          max. recommended length . 001.165 in
+
+  NET = MI_DATA
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.947 in
+          max. recommended length . 001.165 in
+
+  NET = ECAT_\RESET
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.964 in
+          max. recommended length . 001.165 in
+
+  NET = LINKACT[1]/P_CONF[1]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.500 in
+          max. recommended length . 001.165 in
+
+  NET = CLK25OUT1
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 002.678 in
+          max. recommended length . 001.165 in
+
+  NET = PHY1_TX+
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = CLK_MODE[0]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = LINK_MII[0]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$1772
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 82.5 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$18373
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHYAD_OFF
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = P_CONF[2]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = RUN/EEPROM_SIZE
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.970 in
+          max. recommended length . 001.165 in
+
+  NET = LINKACT[0]/P_CONF[0]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.558 in
+          max. recommended length . 001.165 in
+
+  NET = $$$21361
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY1_RX-
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$2429
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$27398
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = RX_ERR[0]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.557 in
+          max. recommended length . 001.165 in
+
+  NET = RX_DV[0]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.609 in
+          max. recommended length . 001.165 in
+
+  NET = LINK_MII[1]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = CLK_MODE[1]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = RX_CLK[1]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY1_TX-
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$8278
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$27652
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.536 in
+          max. recommended length . 001.165 in
+
+  NET = $$$27645
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.546 in
+          max. recommended length . 001.165 in
+
+  NET = $$$27649
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.579 in
+          max. recommended length . 001.165 in
+
+  NET = $$$20599
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = CRS0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = COL0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$15463
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = RX_CLK[0]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_TX3
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_TX2
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_TX0
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$27632
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.550 in
+          max. recommended length . 001.165 in
+
+  NET = $$$27638
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.550 in
+          max. recommended length . 001.165 in
+
+  NET = $$$27642
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+   TERMINATION VIOLATIONS --------------------------------------------
+     ** Warning(Severe) ** 
+        Net too long!
+          found length ............ 001.588 in
+          max. recommended length . 001.165 in
+
+  NET = PHY1_RX+
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_RX-
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_RX+
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_TX-
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_TX1
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$15102
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = EEPROM_DATA
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = OSC_OUT
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = EEPROM_CLK
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = OSC_IN
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = TX_ENA[0]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY0_TX+
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = $$$6043
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. unknown
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = TX_ENA[1]
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+  NET = PHY1_TX1
+   SIGNAL-INTEGRITY STATISTICS ---------------------------------------
+     total receiver capacitance ... 0.0 pF
+     effective net Z0 ............. 83.2 ohms
+     termination type ............. No termination found
+     Net has no driver assigned!
+       Using default driver rise/fall time
+       Use driver IC model for more accurate results
+
+END TIME
+**********************************************************************
+  Date ............................. Wednesday Sep. 02,2015
+  Time ............................. 09:49:37
+  Total Run Time....................  0 Days, 00 Hours, 00 Minutes 01 Seconds
+
+******************************* END **********************************

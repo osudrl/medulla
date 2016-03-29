@@ -1,0 +1,29 @@
+V1
+- 4 Layer Design
+	- Move high speed signals into GND plane
+- Move components in from edge
+	- Advanced Circuits limits copper to 10 mils from the edge of the board
+- Remove mezzanine connector locating pad connection to GND
+- Move mezzanine connectors to other side of board so that EtherCAT jack clearance is not an issue
+- Remove 2.5V input from PDB
+	- KSZ8721 can be purchased with internal LDO
+- Add silkscreen details
+	- Part designators
+	- Connector significance
+	- LED significance
+	- Signature
+	- Port addressing
+	- Test points
+	- ECAT IN/OUT
+- Optimize EtherCAT ASIC passive placement
+- Add mounting holes for soldered spacers
+- Add LEDs
+	- Power status
+	- PHY peripherals
+	- EtherCAT jack peripherals
+	- ET1100 peripherals
+		- Rx errors
+		- Link activity
+		- Run status
+- Add PDB and uC boards
+- Add rounded corners

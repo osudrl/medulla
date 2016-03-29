@@ -1,0 +1,123 @@
+.HEADER
+LIBRARY_FILE    3.0    "PADS Layout VX.0"    2015/09/02.09:11:49    1
+.END_HEADER
+.ELECTRICAL
+0603-JUMPER                                  JUMPER-3X1                                   THOU      1.0                      
+0     -98.43                        30.0                          0     
+0     -98.43                        -30.0                         0     
+0     98.43                         -30.0                         0     
+0     98.43                         30.0                          0     
+0     -98.43                        30.0                          0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603                                         RESISTOR-SMALL                               THOU      16.0                     
+0     -75.0                    -40.0                    0     
+0     75.0                     -40.0                    0     
+0     75.0                     40.0                     0     
+0     -75.0                    40.0                     0     
+0     -75.0                    -40.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+JG0-0031NL                                   JG0-0031NL                                   THOU      530.0                    
+0     -655.0                   -437.5                   0     
+0     655.0                    -437.5                   0     
+0     655.0                    615.0                    0     
+0     -655.0                   615.0                    0     
+0     -655.0                   -437.5                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+NTA7002NT1G                                  NTA7002NT1G                                  THOU      32.0                     
+0     -39.0                    -35.5                    0     
+0     39.0                     -35.5                    0     
+0     39.0                     35.5                     0     
+0     -39.0                    35.5                     0     
+0     -39.0                    -35.5                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603                                         CAPACITOR-SMALL                              THOU      32.0                     
+0     -75.0                    -40.0                    0     
+0     75.0                     -40.0                    0     
+0     75.0                     40.0                     0     
+0     -75.0                    40.0                     0     
+0     -75.0                    -40.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+KMR                                          SWITCH_BUTTON                                THOU      60.0                     
+0     -98.43                   -51.18                   0     
+0     98.43                    -51.18                   0     
+0     98.43                    51.18                    0     
+0     -98.43                   51.18                    0     
+0     -98.43                   -51.18                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+9774050951R                                  9774050951R                                  THOU      1.0                      
+0     -118.11                  -118.11                  0     
+0     118.11                   -118.11                  0     
+0     118.11                   118.11                   0     
+0     -118.11                  118.11                   0     
+0     -118.11                  -118.11                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603                                         INDUCTOR                                     THOU      32.0                     
+0     -75.0                    -40.0                    0     
+0     75.0                     -40.0                    0     
+0     75.0                     40.0                     0     
+0     -75.0                    40.0                     0     
+0     -75.0                    -40.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+ET1100                                       ET1100                                       THOU      47.0                     
+0     -226.38                  -202.76                  0     
+0     202.76                   -202.76                  0     
+0     202.76                   202.76                   0     
+0     -226.38                  202.76                   0     
+0     -226.38                  -202.76                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+BR24S16FVT-WE2                               BR24S16FVT-WE2                               THOU      47.0                     
+0     -59.06                        -88.58                        0     
+0     59.06                         -88.58                        0     
+0     59.06                         88.58                         0     
+0     -59.06                        88.58                         0     
+0     -59.06                        -88.58                        0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-POLERIZED                               LED                                          THOU      22.0                     
+0     -90.0                    -35.0                    0     
+0     70.0                     -35.0                    0     
+0     70.0                     35.0                     0     
+0     -90.0                    35.0                     0     
+0     -90.0                    -35.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603_SQUARE                                  RESISTOR-SMALL                               THOU      16.0                     
+0     -50.0                    -15.0                    0     
+0     50.0                     -15.0                    0     
+0     50.0                     15.0                     0     
+0     -50.0                    15.0                     0     
+0     -50.0                    -15.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+7M-25_000MAAJ-T                              7M-25_000MAAJ-T                              THOU      31.0                     
+0     -92.52                   -80.71                   0     
+0     70.87                    -80.71                   0     
+0     70.87                    61.02                    0     
+0     -92.52                   61.02                    0     
+0     -92.52                   -80.71                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+DF12                                         DF12-40DS-0_5V_86_                           THOU      129.0                    
+0     -74.8                         240.16                        0     
+0     -74.8                         -240.16                       0     
+0     74.8                          -240.16                       0     
+0     74.8                          240.16                        0     
+0     -74.8                         240.16                        0     
+.END_ELECTRICAL
+.ELECTRICAL
+KSZ8721BT_48TQFP                             KSZ8721BL                                    THOU      63.0                     
+0     -177.0                   -177.0                   0     
+0     177.0                    -177.0                   0     
+0     177.0                    177.0                    0     
+0     -177.0                   177.0                    0     
+0     -177.0                   -177.0                   0     
+.END_ELECTRICAL
